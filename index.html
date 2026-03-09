@@ -3,27 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Troy Jennings — Network & Systems Administrator </title>
+  <title>Troy Jennings — Network & Systems Administrator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Custom cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-trail" id="cursorTrail"></div>
-
-  <!-- Noise overlay -->
-  <div class="noise"></div>
-
   <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
   <nav id="nav">
-    <div class="nav-logo">TJ<span class="blink">_</span></div>
+    <div class="nav-logo">Troy Jennings</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#overhauls">Overhauls</a></li>
+      <li><a href="#overhauls">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
@@ -37,7 +30,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <ul>
       <li><a href="#about" class="mobile-link">About</a></li>
-      <li><a href="#overhauls" class="mobile-link">Overhauls</a></li>
+      <li><a href="#overhauls" class="mobile-link">Projects</a></li>
       <li><a href="#skills" class="mobile-link">Skills</a></li>
       <li><a href="#experience" class="mobile-link">Experience</a></li>
       <li><a href="#contact" class="mobile-link">Contact</a></li>
@@ -46,25 +39,29 @@
 
   <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
   <section class="hero" id="hero">
-    <div class="hero-grid-lines"></div>
+    <div class="hero-bg-pattern"></div>
     <div class="hero-content">
-      <div class="hero-tag reveal-up">[ CISCO CCNA · CCNA ID NO. CSCO14119766 ]</div>
+      <div class="hero-credential reveal-up">
+        <span class="credential-dot"></span>
+        Cisco CCNA &nbsp;·&nbsp; ID No. CSCO14119766
+      </div>
       <h1 class="hero-name reveal-up delay-1">
-        <span class="name-troy">TROY</span>
-        <span class="name-jennings">JENNINGS</span>
+        Troy<br/><em>Jennings</em>
       </h1>
       <div class="hero-title reveal-up delay-2">
-        <span class="title-line">Network &amp; Systems</span>
-        <span class="title-line accent">Administrator</span>
+        Network &amp; Systems Administrator
+        <span class="title-separator">—</span>
+        Security-Focused Infrastructure
       </div>
       <p class="hero-sub reveal-up delay-3">
-        Building resilient infrastructure at scale — 70+ locations, zero downtime, three full overhauls.
+        Building resilient, secure infrastructure at scale — 70+ locations, zero downtime, three full overhauls.
       </p>
       <div class="hero-actions reveal-up delay-4">
-        <a href="#overhauls" class="btn-primary">View Overhauls</a>
+        <a href="#overhauls" class="btn-primary">View Projects</a>
         <a href="#contact" class="btn-ghost">Get In Touch</a>
       </div>
     </div>
+
     <div class="hero-stats reveal-up delay-3">
       <div class="stat">
         <span class="stat-num" data-target="70">0</span><span class="stat-sym">+</span>
@@ -81,8 +78,9 @@
         <span class="stat-label">Infrastructure Overhauls</span>
       </div>
     </div>
+
     <div class="scroll-hint">
-      <span>SCROLL</span>
+      <span>Scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
@@ -92,7 +90,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-left">
-          <div class="section-label">// 01 ABOUT</div>
+          <div class="section-label">01 &mdash; About</div>
           <h2 class="section-heading">The engineer <br/><em>behind the wire.</em></h2>
         </div>
         <div class="about-right">
@@ -100,7 +98,7 @@
             I started in banking — learning that complex systems require both precision and people skills. When I pivoted to IT, I brought that mindset with me. In under two years, I went from helpdesk to managing network and systems infrastructure for a national retailer with 70+ locations.
           </p>
           <p class="about-text">
-            I hold a Cisco CCNA and have completed my A.S. in Information Technology at SNHU. I continue my education working towards my B.S. in Information Technology. I specialize in FortiGate/FortiManager ecosystems, hybrid Azure/Active Directory environments, and turning infrastructure chaos into documented, scalable systems.
+            I hold a Cisco CCNA and have completed my A.S. in Information Technology at SNHU. I continue my education working towards my B.S. in Information Technology. I specialize in FortiGate/FortiManager ecosystems, hybrid Azure/Active Directory environments, and security-first infrastructure design aligned with NIST CSF and CIS Controls.
           </p>
           <div class="about-badges">
             <span class="badge">FortiGate</span>
@@ -109,6 +107,8 @@
             <span class="badge">PowerShell</span>
             <span class="badge">VMware</span>
             <span class="badge">Intune</span>
+            <span class="badge">NIST CSF</span>
+            <span class="badge">SIEM</span>
           </div>
         </div>
       </div>
@@ -118,20 +118,19 @@
   <!-- ═══════════════════════════ OVERHAULS ═══════════════════════════ -->
   <section class="overhauls section" id="overhauls">
     <div class="container">
-      <div class="section-label">// 02 INFRASTRUCTURE OVERHAULS</div>
+      <div class="section-label">02 &mdash; Infrastructure Projects</div>
       <h2 class="section-heading">Three overhauls. <em>Zero downtime.</em></h2>
     </div>
 
     <div class="overhaul-cards">
 
-      <!-- Card 1 — Corporate Building Transfer -->
       <div class="overhaul-card card-featured" data-index="01">
         <div class="card-number">01</div>
         <div class="card-inner">
-          <div class="card-tag">FLAGSHIP PROJECT</div>
+          <div class="card-tag">Flagship Project</div>
           <h3 class="card-title">Corporate Building Relocation</h3>
           <p class="card-desc">
-            Planned and executed a complete infrastructure migration for a corporate HQ relocation. Every network layer — switching, firewalling, VLANs, VPN tunnels, and connectivity — was rebuilt from the ground up in the new building while maintaining live operations in the old one. Site went fully live with zero service interruption.
+            Planned and executed a complete infrastructure migration for a corporate HQ relocation. Every network layer — switching, firewalling, VLANs, VPN tunnels, and connectivity — was rebuilt from the ground up while maintaining live operations. Site went fully live with zero service interruption.
           </p>
           <ul class="card-highlights">
             <li>Full switching fabric design &amp; deployment (LACP, trunking, stacking)</li>
@@ -144,16 +143,14 @@
             <span>FortiGate</span><span>FortiManager</span><span>VPN/IPsec</span><span>VLANs</span><span>LACP</span>
           </div>
         </div>
-        <div class="card-glow"></div>
       </div>
 
-      <!-- Card 2 — IP Redesign -->
       <div class="overhaul-card" data-index="02">
         <div class="card-number">02</div>
         <div class="card-inner">
           <h3 class="card-title">Enterprise-Wide IP Redesign</h3>
           <p class="card-desc">
-            Led a complete IP addressing overhaul across all sites — eliminating conflicts, improving subnet efficiency, and building a scalable VLAN segmentation framework that could grow with the business. Rolled out across 70+ locations with FortiManager automation handling config distribution.
+            Led a complete IP addressing overhaul across all sites — eliminating conflicts, improving subnet efficiency, and building a scalable VLAN segmentation framework. Rolled out across 70+ locations with FortiManager automation handling config distribution.
           </p>
           <ul class="card-highlights">
             <li>IP conflict resolution across 70+ locations</li>
@@ -165,16 +162,14 @@
             <span>FortiManager</span><span>DHCP</span><span>DNS</span><span>VLANs</span><span>Subnetting</span>
           </div>
         </div>
-        <div class="card-glow"></div>
       </div>
 
-      <!-- Card 3 — Systems Infrastructure Refresh -->
       <div class="overhaul-card" data-index="03">
         <div class="card-number">03</div>
         <div class="card-inner">
           <h3 class="card-title">Systems Infrastructure Refresh</h3>
           <p class="card-desc">
-            Overhauled core systems infrastructure including Active Directory restructuring, Entra (Azure AD) hybrid sync, VM environment rationalization, and endpoint management via Intune. Paired with PowerShell automation that cut provisioning time by 80–90%.
+            Overhauled core systems infrastructure including Active Directory restructuring, Entra hybrid sync, VM rationalization, and endpoint management via Intune. Paired with PowerShell automation that cut provisioning time by 80–90%.
           </p>
           <ul class="card-highlights">
             <li>AD restructure &amp; Entra hybrid identity sync</li>
@@ -187,7 +182,6 @@
             <span>Active Directory</span><span>Azure/Entra</span><span>VMware</span><span>Intune</span><span>PowerShell</span>
           </div>
         </div>
-        <div class="card-glow"></div>
       </div>
 
     </div>
@@ -196,13 +190,13 @@
   <!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
   <section class="skills section" id="skills">
     <div class="container">
-      <div class="section-label">// 03 SKILLS</div>
+      <div class="section-label">03 &mdash; Skills &amp; Frameworks</div>
       <h2 class="section-heading">The full <em>stack.</em></h2>
 
       <div class="skills-grid">
 
         <div class="skill-group">
-          <div class="skill-group-label">NETWORKING</div>
+          <div class="skill-group-label">Networking</div>
           <div class="skill-items">
             <div class="skill-item"><span class="skill-dot"></span>FortiGate / FortiManager</div>
             <div class="skill-item"><span class="skill-dot"></span>Cisco / pfSense / HP</div>
@@ -214,7 +208,7 @@
         </div>
 
         <div class="skill-group">
-          <div class="skill-group-label">SYSTEMS</div>
+          <div class="skill-group-label">Systems</div>
           <div class="skill-items">
             <div class="skill-item"><span class="skill-dot"></span>Windows Server 2019/2022</div>
             <div class="skill-item"><span class="skill-dot"></span>Active Directory / Group Policy</div>
@@ -226,7 +220,7 @@
         </div>
 
         <div class="skill-group">
-          <div class="skill-group-label">VIRTUALIZATION &amp; AUTOMATION</div>
+          <div class="skill-group-label">Virtualization &amp; Automation</div>
           <div class="skill-items">
             <div class="skill-item"><span class="skill-dot"></span>VMware / Hyper-V / Proxmox</div>
             <div class="skill-item"><span class="skill-dot"></span>PowerShell Scripting</div>
@@ -237,6 +231,39 @@
           </div>
         </div>
 
+        <div class="skill-group skill-group--security">
+          <div class="skill-group-label">
+            <span class="security-label-icon">&#9632;</span>
+            Security Frameworks &amp; Practices
+          </div>
+          <div class="skill-items">
+            <div class="skill-item skill-item--framework">
+              <span class="framework-tag">NIST CSF</span>
+              Identify · Protect · Detect · Respond · Recover
+            </div>
+            <div class="skill-item skill-item--framework">
+              <span class="framework-tag">MITRE ATT&amp;CK</span>
+              Threat Modeling · TTP Mapping · Detection Engineering
+            </div>
+            <div class="skill-item skill-item--framework">
+              <span class="framework-tag">SIEM</span>
+              Log Aggregation · Alerting · Syslog / FortiAnalyzer / Huntress
+            </div>
+            <div class="skill-item skill-item--framework">
+              <span class="framework-tag">Compliance</span>
+              HIPAA-Compliant Infrastructure · PCI-DSS Awareness · Audit Readiness
+            </div>
+            <div class="skill-item skill-item--framework">
+              <span class="framework-tag">IR</span>
+              Incident Response Planning · Threat Hunting · EDR Triage
+            </div>
+            <div class="skill-item skill-item--framework">
+              <span class="framework-tag">CIS</span>
+              CIS Controls Alignment · Hardening Baselines · Vulnerability Management
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -244,47 +271,43 @@
   <!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
   <section class="experience section" id="experience">
     <div class="container">
-      <div class="section-label">// 04 EXPERIENCE</div>
+      <div class="section-label">04 &mdash; Experience</div>
       <h2 class="section-heading">The <em>timeline.</em></h2>
 
       <div class="timeline">
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">July 2025 — Present</div>
-          <div class="timeline-content">
-            <div class="timeline-role">Network Administrator</div>
+          <div class="timeline-meta">
+            <div class="timeline-date">July 2025 — Present</div>
             <div class="timeline-company">Woodcraft Supply LLC</div>
-            <p>Managing FortiManager and FortiGate deployments across 70+ sites. Leading infrastructure overhauls, IP redesigns, and firewall policy management. Building and maintaining site-to-site VPNs and SSL remote access.</p>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-role">Network &amp; Systems Administrator</div>
+            <p>Managing FortiManager and FortiGate deployments across 70+ sites — including infrastructure overhauls, IP redesigns, firewall policy management, site-to-site VPNs, and SSL remote access. Simultaneously managing Windows Server, Active Directory, Azure/Entra hybrid identity, VMware/Azure VMs, Microsoft 365, and Intune. Built PowerShell automation cutting provisioning time by 80–90%. <strong>Promoted within 11 months.</strong></p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">July 2025 — Present</div>
-          <div class="timeline-content">
-            <div class="timeline-role">Systems Administrator</div>
+          <div class="timeline-meta">
+            <div class="timeline-date">Sept 2024 — July 2025</div>
             <div class="timeline-company">Woodcraft Supply LLC</div>
-            <p>Managing Windows Server, Active Directory, Azure/Entra hybrid identity, VMware/Azure VMs, Microsoft 365, and Intune. Built PowerShell automation saving 80–90% of provisioning time. <strong>Promoted within 11 months.</strong></p>
           </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Sept 2024 — July 2025</div>
           <div class="timeline-content">
             <div class="timeline-role">IT Helpdesk</div>
-            <div class="timeline-company">Woodcraft Supply LLC</div>
             <p>100% SLA compliance supporting 70+ locations. Imaged 300+ systems for Windows 11 rollout. Resolved escalated networking, authentication, and endpoint issues.</p>
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item timeline-item--muted">
           <div class="timeline-dot timeline-dot--muted"></div>
-          <div class="timeline-date">Oct 2022 — Sept 2024</div>
+          <div class="timeline-meta">
+            <div class="timeline-date">Oct 2022 — Sept 2024</div>
+            <div class="timeline-company">Peoples Bank</div>
+          </div>
           <div class="timeline-content">
             <div class="timeline-role">Universal Banker II</div>
-            <div class="timeline-company">Peoples Bank</div>
             <p>Customer service, financial operations, cross-functional collaboration. Built the communication and critical thinking skills that translate directly to IT work.</p>
           </div>
         </div>
@@ -296,27 +319,33 @@
   <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
   <section class="contact section" id="contact">
     <div class="container">
-      <div class="section-label">// 05 CONTACT</div>
+      <div class="section-label">05 &mdash; Contact</div>
       <h2 class="section-heading">Let's build <em>something.</em></h2>
       <p class="contact-sub">Available for infrastructure projects, consulting, and new roles. Based in Vienna, WV.</p>
 
       <div class="contact-links">
         <a href="tel:3046150969" class="contact-link">
-          <span class="contact-icon">📞</span>
+          <span class="contact-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          </span>
           <span class="contact-text">
             <span class="contact-type">Phone / Text</span>
             <span class="contact-value">304.615.0969</span>
           </span>
         </a>
-        <a href="mailto:troyjennings52@gmail.com" class="contact-link">
-          <span class="contact-icon">✉</span>
+        <a href="/cdn-cgi/l/email-protection#2e5a5c4157444b40404740495d1b1c6e49434f4742004d4143" class="contact-link">
+          <span class="contact-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
           <span class="contact-text">
             <span class="contact-type">Email</span>
-            <span class="contact-value">troyjennings52@gmail.com</span>
+            <span class="contact-value"><span class="__cf_email__" data-cfemail="4e3a3c2137242b20202720293d7b7c0e29232f2722602d2123">[email&#160;protected]</span></span>
           </span>
         </a>
         <div class="contact-link contact-link--info">
-          <span class="contact-icon">📍</span>
+          <span class="contact-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
           <span class="contact-text">
             <span class="contact-type">Location</span>
             <span class="contact-value">Vienna, WV</span>
@@ -329,11 +358,5 @@
   <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
   <footer class="footer">
     <div class="footer-inner">
-      <span class="footer-name">TROY JENNINGS</span>
-      <span class="footer-copy">Network &amp; Systems Administrator</span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+      <span class="footer-name">Troy Jennings</span>
+      <span class="footer-copy">Network &amp; Systems
